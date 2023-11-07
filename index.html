@@ -3,12 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lara Weather App</title>
+    <title>Lara's Weather App</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js">
+    </script>
 </head>
 <body>
-    <h1>Welcome to My weather App</h1>
-    <footer> Coded by <a href="https://github.com/LaraMendesss" alt="">Lara Mendes</a>, open-sourced on <a href="https://github.com/LaraMendesss/weather-project-laramendes">GitHub</a> and hosted on <a href="https://laraweatherapp.netlify.app/">Netlify</a>
-    
+  <form class="form searchers">
+  
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Enter your City"
+            aria-label="City"
+            id="search-text-input"
+            required
+          />
+
+          <input type="submit" value="Search" class="btnFind" id="find" />
+         
+    </form>
+    <h1>
+      Madrid
+    </h1>
+    <h6></h6>
+    <div class="details">
+      <div class="icon">
+        <img
+          src="photos/sun.jpg"
+          width="90px"
+        />
+      </div>
+      <div class="temperatura"><span id="numbers">15</span>
+      <sup>
+      <span class="units">
+      °C
+      </sup></span></div>
+      <div class="description">
+        <p class="date">Tuesday, 10:54 am</p>
+        Sunny <span id="wkday"> Wednesday</span>
+        <div class="=descrp2">
+          Humidity: <span id="humidity">10</span> % | Wind: <span id="wind"> 5 </span>km/h</h>
+        </div>
+      </div>
+      
+    </div>
+  
+
+      <div class="week">
+     
+        <div class="weekDays">
+          <strong> Wed| Oct 4</strong>
+          <br/>
+
+          <img
+            class="clima"
+            src="photos/sun.jpg" width="50px"
+          />
+          <br/>
+          28° | 16°
+    </div>
+    <div class="weekDays">
+          <strong> Thu| Oct 5</strong>
+          <br/>
+
+          <img
+            class="clima"
+            src="photos/sun.jpg" width="50px"
+          />
+          <br/>
+          25° | 15°
+        </div>
+        <div class="weekDays">
+          <strong> Fri| Oct 6</strong>
+          <br/>
+          <img
+            class="clima"
+            src="photos/rain.jpg" width="50px"
+          />
+          <br/>
+          23° | 17°
+        </div>
+        <div class="weekDays">
+          <strong> Sat| Oct 7</strong>
+          <br/>
+          <img
+            class="clima"
+            src="photos/cloudy.png" width="50px"
+          />
+          <br/>
+          20° | 13°
+        </div>
+        <div class="weekDays">
+          <strong> Sun| Oct 8</strong>
+          <br/>
+          <img
+            class="clima"
+            src="photos/cloudy.png" width="50px"
+          />
+          <br/>
+          17° | 10°
+        </div>
+        <div class="weekDays">
+          <strong> Mon| Oct 9</strong>
+          <br>
+          <img
+            class="clima"
+            src="photos/rain.jpg" width="50px"
+          />
+          </br>
+          16° | 8°
+        </div>
+        <div class="weekDays">
+          <strong> Tue| Oct10</strong>
+          <br/>
+          <img
+            class="clima"
+            src="photos/sun.jpg" width="50px"
+          />
+          <br/>
+          18° | 11°
+        </div>
+      </div>
+
+
+<br/>
+
+    <footer> Coded by <a href="https://github.com/LaraMendesss" alt="" target="_blank">Lara Mendes</a>, open-sourced on <a href="https://github.com/LaraMendesss/weather-project-laramendes" target="_blank">GitHub</a> and hosted on <a href="https://laraweatherapp.netlify.app/" target="_blank">Netlify</a>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
