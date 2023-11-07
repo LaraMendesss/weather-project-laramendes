@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("photos/rome.jpg");
+   background-repeat: no-repeat;
+    background-size:cover;
+  
+  }
+  .form {
+    text-align: center;
+    display: block;
+    margin: 150px auto 0 auto;
+    padding-top: 10px;
+    border-color: rgb(0, 111, 255);
+    border-style: solid 80%;
+    border-width: 4px;
+    border-radius: 5px;
+    width: 800px;
+    height: 450px;
+    background: white;
+  }
+  h1 {
+    color: rgb(90, 98, 117);
+    margin: 25px 0 20px 75px;
+    text-align: left;
+    font-size: 40px;
+  }
+ 
+  
+  .details {
+    display: flex;
+    justify-content: space-around;
+  }
+  .searchers {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+  }
+  .description{
+    text-align: left;
+    margin-left: 60px;
+    color:rgb(0, 111, 255);
+    line-height: 1.7;
+    opacity: 80%;
+    
+    font-size: 18px; 
+    font-weight: bold;
+  }
+  .icon 
+  {
+    text-align: center;
+    margin-right: -90px;
+    margin-top: -20px;}
+
+   .date{
+    font-size: 20px;
+    color:rgb(90, 98, 117);
+    font-weight: bold;
+  
+   
+  }
+  .temperatura {
+    font-size: 90px;
+    color: rgb(90, 98, 117);
+    text-align: right;
+    margin-top: -30px;
+ margin-right: 40px;
+  }
+ 
+  .descrp2 {
+   color: rgb(136, 134, 134);
+    font-size: 14px;
+  }
+  
+  .btnFind {
+    background-color:rgb(0, 111, 255);
+    border-color: rgb(0, 111, 255);
+    color: white;
+    border-width: 4px;
+    font-weight: bolder;
+    margin: 25px 20px 5px 10px;
+    padding: 13px 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+    border-style: solid;
+    transition: 200ms ease-in-out;
+  }
+  
+  .btnFind:hover {
+    color: rgb(0, 111, 255);
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+  }
+  .weekDays {
+    font-size: 14px;
+    color: rgb(136, 134, 134);
+    text-align: center;
+  }
+  .week {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  
+  .units {
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(90, 98, 117);
+  }
+  .clima {
+    width: 50px;
+  }
+  
+  
+  .form-control {
+    color: rgb(136, 134, 134);
+    border-width: 4px;
+    border-radius: 7px;
+    border-color: rgb(0, 111, 255);
+    text-align: left;
+    margin: 25px 20px 5px 65px;
+    padding: 10px 90px 10px 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    border-style: solid;
+  }
+  input[type="search"]::placeholder {
+    color: rgb(0, 111, 255);
+    border-color: rgb(0, 111, 255);
+    font-size: 16px;
+  }
+  input[type="search"]:focus {
+    box-shadow: rgb(0, 111, 255);
+    border-color: rgb(0, 111, 255);
+    outline-color: rgb(0, 111, 255);
+    font-size: 16px;
+  }
+  footer{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+  }
+  a {
+   
+    color: white;
+  }
