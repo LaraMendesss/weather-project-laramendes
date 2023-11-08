@@ -17,9 +17,6 @@ let minutes = String(now.getMinutes()).padStart(2, "0");
 let date = document.querySelector(".date");
 date.innerHTML = `${day} ${hour}:${minutes}`;
 
-console.log(day);
-
-
 function showTemp(response){
   let temperaturElement= document.querySelector("#numbers");
   let temperature = response.data.temperature.current;
@@ -39,12 +36,11 @@ let wind = Math.round(response.data.wind.speed);
 windElement.innerHTML=wind
 
 let iconElement = document.querySelector(".icon");
-let icon = response.data.condition.icon_url;
-iconElement.innerHTML= icon;
+iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" class="icon"/>`;
 
 let conditionElement = document.querySelector("#condition");
-let condition = response.data.condition.description.toUpperCase();
-conditionElement.innerHTML= condition;
+let condition = response.data.condition.description;
+conditionElement.innerHTML= condition.charAt(0).toUpperCase()+condition.slice(1);
 console.log(response);
 
 }

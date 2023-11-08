@@ -15,7 +15,7 @@ body {
     border-width: 4px;
     border-radius: 5px;
     width: 800px;
-    height: 450px;
+    height: 470px;
     background: white;
   }
   h1 {
@@ -28,7 +28,8 @@ body {
   
   .details {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
+    margin-bottom: 40px;
   }
   .searchers {
     padding-top: 10px;
@@ -38,19 +39,19 @@ body {
   }
   .description{
     text-align: left;
-    margin-left: 60px;
+  margin-left: 75px;
     color:rgb(0, 111, 255);
-    line-height: 1.7;
+    line-height: 1.5;
     opacity: 80%;
-    
     font-size: 18px; 
     font-weight: bold;
   }
   .icon 
   {
-    text-align: center;
-    margin-right: -90px;
-    margin-top: -20px;}
+    margin-left: 10px;
+    margin-top: -5px;
+  
+    }
 
    .date{
     font-size: 20px;
@@ -60,11 +61,20 @@ body {
    
   }
   .temperatura {
-    font-size: 90px;
+    font-size: 80px;
     color: rgb(90, 98, 117);
-    text-align: right;
-    margin-top: -30px;
- margin-right: 40px;
+    margin-top: -5px;
+    margin-left: 20px;
+  }
+  
+  #numbers{
+    text-align: left;
+   
+  }
+  .units{
+    vertical-align:super;
+    font-size: 40px;
+    text-align: left;
   }
  
   .descrp2 {
@@ -83,7 +93,7 @@ body {
     text-align: center;
     border-radius: 5px;
     box-shadow: none;
-    font-size: 16px;
+    font-size: 14px;
     border-style: solid;
     transition: 200ms ease-in-out;
   }
@@ -92,7 +102,7 @@ body {
     color: rgb(0, 111, 255);
     background-color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 
   }
   .weekDays {
@@ -103,15 +113,9 @@ body {
   .week {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: 25px;
   }
-  
-  
-  .units {
-    font-size: 40px;
-    font-weight: bolder;
-    color: rgb(90, 98, 117);
-  }
+
   .clima {
     width: 50px;
   }
@@ -127,26 +131,27 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 14px;
     border-style: solid;
   }
   input[type="search"]::placeholder {
     color: rgb(0, 111, 255);
     border-color: rgb(0, 111, 255);
-    font-size: 16px;
+    font-size: 14px;
   }
   input[type="search"]:focus {
     box-shadow: rgb(0, 111, 255);
     border-color: rgb(0, 111, 255);
     outline-color: rgb(0, 111, 255);
-    font-size: 16px;
+    font-size: 14px;
   }
   footer{
     text-align: center;
     font-size: 13px;
-    color: white;
+    color: rgb(136, 134, 134);
   }
   a {
    
-    color: white;
+    color:rgb(136, 134, 134);
+    font-weight: bold;
   }
