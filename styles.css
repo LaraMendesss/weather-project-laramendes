@@ -110,7 +110,7 @@ body {
     color: rgb(136, 134, 134);
     text-align: center;
   }
-  .week {
+  #forecast {
     display: flex;
     justify-content: space-around;
     margin-top: 25px;

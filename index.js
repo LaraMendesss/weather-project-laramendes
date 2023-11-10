@@ -58,6 +58,31 @@ function cityFind(event) {
     searchCity(searchInput.value);
 }
 
+function displayForecast() {
+
+  let days = ["Tue","Wed","Thu","Fri","Sat","Sun","Mon"];
+  let forecastHtml="";
+
+  days.forEach(function(day) {
+  forecastHtml = forecastHtml + 
+
+  `<div class="weekDays">
+     <strong> ${day}| Oct 4</strong>
+     <br/>
+
+     <img
+       class="clima"
+      src="photos/sun.jpg" width="50px"
+      />
+      <br/>
+      28° | 16°
+</div>
+  </div>`;
+});
+
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML= forecastHtml;
+}
 
 let form = document.querySelector("form");
 form.addEventListener("submit", cityFind);
@@ -65,8 +90,6 @@ form.addEventListener("submit", cityFind);
 let button = document.querySelector("#find");
 button.addEventListener("click",cityFind);
 
-
 searchCity("Rome");
-
-
+displayForecast();
 
