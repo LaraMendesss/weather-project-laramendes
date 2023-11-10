@@ -14,8 +14,8 @@ body {
     border-style: solid 80%;
     border-width: 4px;
     border-radius: 5px;
-    width: 650px;
-    height: 380px;
+    width: 700px;
+    height: 480px;
     background: white;
   }
   h1 {
@@ -106,14 +106,15 @@ body {
 
   }
   .weekDays {
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(136, 134, 134);
     text-align: center;
   }
   .week {
     display: flex;
     justify-content: space-around;
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
   }
 
   .clima {
