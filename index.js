@@ -74,8 +74,6 @@ function getForecast(city){
 
 
 function displayForecast(response) {
-  console.log(response);
-
   
   let forecastHtml="";
 
@@ -88,15 +86,15 @@ function displayForecast(response) {
   <div class="weekDays">
   <div class="forecast-date">
      <strong> ${formatDay(day.time)}</strong> </div>
-     <br/>
+   
      <div class="forecast-icon">
      <img
        class="clima"
-      src="${day.condition.icon_url}" width="70px"
+      src="${day.condition.icon_url}" width="60px"
       /></div>
-      <br/>
+
       <div class="forecast-temperatures">
-      <span class="forecast-max"> ${Math.round(day.temperature.maximum)}° </span>|<span class=forecast-min"> ${Math.round(day.temperature.minimum)}° </span>
+      <strong class="forecast-max"> ${Math.round(day.temperature.maximum)}° </strong>|<span class=forecast-min"> ${Math.round(day.temperature.minimum)}° </span>
 </div>
   </div>
   `;}
@@ -112,6 +110,6 @@ form.addEventListener("submit", cityFind);
 let button = document.querySelector("#find");
 button.addEventListener("click",cityFind);
 
-searchCity("New York");
+searchCity("Manhattan");
 displayForecast();
 

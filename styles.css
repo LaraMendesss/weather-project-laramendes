@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("photos/rome.jpg");
+    background-image: url("photos/nyc.jpg");
    background-repeat: no-repeat;
     background-size:cover;
   
@@ -8,18 +8,19 @@ body {
   .box {
     text-align: center;
     display: block;
-    margin: 150px auto 0 auto;
+    margin: 220px auto 5px auto;
     padding-top: 10px;
     border-color: rgb(0, 111, 255);
     border-style: solid 80%;
     border-width: 4px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 700px;
-    height: 480px;
+    height: 400px;
     background: white;
   }
   h1 {
-    color: rgb(90, 98, 117);
+    color: black;
+    opacity: 70%;
     margin: 25px 0 20px 75px;
     text-align: left;
     font-size: 40px;
@@ -32,8 +33,8 @@ body {
     margin-bottom: 40px;
   }
   .searchers {
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
+    
     display: flex;
     justify-content: left;
   }
@@ -83,9 +84,11 @@ body {
   }
   
   .btnFind {
-    background-color:rgb(0, 111, 255);
-    border-color: rgb(0, 111, 255);
-    color: white;
+    background-color:rgb(136, 134, 134);
+
+    border-color:rgb(136, 134, 134);
+
+    color:white;
     border-width: 4px;
     font-weight: bolder;
     margin: 25px 20px 5px 10px;
@@ -99,7 +102,7 @@ body {
   }
   
   .btnFind:hover {
-    color: rgb(0, 111, 255);
+    color: rgb(136, 134, 134);
     background-color: white;
     cursor: pointer;
     font-size: 14px;
@@ -110,20 +113,29 @@ body {
     color: rgb(136, 134, 134);
     text-align: center;
   }
+
+  .forecast-date{
+    font-size: 14px;
+    color: black;
+    opacity: 70%;
+  }
   #forecast {
     display: flex;
     justify-content: space-around;
-
-    margin-bottom: 20px;
+margin: -20px 30px auto 30px;
   }
 
+  .forecast-max{
+    color: black;
+    opacity: 70%;
+  }
  
   
   .form-control {
     color: rgb(136, 134, 134);
     border-width: 4px;
     border-radius: 7px;
-    border-color: rgb(0, 111, 255);
+    border-color:rgb(136, 134, 134);
     text-align: left;
     margin: 25px 20px 5px 65px;
     padding: 10px 90px 10px 5px;
@@ -134,23 +146,23 @@ body {
     border-style: solid;
   }
   input[type="search"]::placeholder {
-    color: rgb(0, 111, 255);
-    border-color: rgb(0, 111, 255);
+    color: rgb(136, 134, 134);
+    border-color:rgb(136, 134, 134);
     font-size: 14px;
   }
   input[type="search"]:focus {
-    box-shadow: rgb(0, 111, 255);
-    border-color: rgb(0, 111, 255);
-    outline-color: rgb(0, 111, 255);
+    box-shadow:rgb(136, 134, 134);
+    border-color:rgb(136, 134, 134);
+    outline-color: rgb(136, 134, 134);
     font-size: 14px;
   }
   footer{
     text-align: center;
     font-size: 13px;
-    color: rgb(136, 134, 134);
+    color: white
   }
   a {
    
-    color:rgb(136, 134, 134);
+    color:white;
     font-weight: bold;
   }
