@@ -41,8 +41,8 @@ iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" class="ic
 let conditionElement = document.querySelector("#condition");
 let condition = response.data.condition.description;
 conditionElement.innerHTML= condition.charAt(0).toUpperCase()+condition.slice(1);
-console.log(response);
 
+getForecast(response.data.city);
 }
 
 function searchCity(city){
@@ -58,7 +58,15 @@ function cityFind(event) {
     searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city){
+  let apiKey= "dda9a648t200432eo3334f85db57e348";
+  let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+
+function displayForecast(response) {
+console.log(response);
 
   let days = ["Tue","Wed","Thu","Fri","Sat","Sun","Mon"];
   let forecastHtml="";
